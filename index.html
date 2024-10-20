@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6a4ce21491.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="head">
+            <nav>
+                <!-- <img src="img/logo.png" alt="logo" class="logo"> -->
+                <h1>Gaurav's Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <section class="firstsection">
+                <!-- <div class="logo">
+                    <img src="logo.png" alt="">
+                </div> -->
+                
+                <div class="leftsection">
+    
+                    Hi, I'm <span class="purple"> Kumar Gaurav </span>
+    
+                    <div>and I am a Passionate</div>
+                    <span id="element1"></span>
+                    
+                </div>
+                <!-- <div class="rightsection">
+                    <img src="img/bg.png" alt="404">
+                </div> -->
+            </section>
+            <!-- <div class="header-text">
+                <p>UI/UX Designer / Web Developer</p>
+                <h1>Hi, I'm <span> Abhishek</span></h1>
+                
+            </div> -->
+        </div>
+
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/mee.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"Hello, I'm <span>Kumar Gaurav</span>, currently pursuing my master's degree in computer application at SRM INSTITUTE OF SCIENCE AND TECHNOLOGY. I'm dedicated web developer with a passion for crafting intuitive and user-friendly digital experiences. With a strong foundation in HTML, CSS and JavaScript. I've successfully delivered numerous projects that showcase my problem-solving skills and attention to detail. When I'm not coding, you can find me exploring new technologies or hiking with friends. I'm excited to collaborate and bring innovative ideas to life."</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                            <li><span>Web Development</span><br>Responsive Web App Development</li>
+                            <li><span>Tools</span><br>Git And Github
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Intermediate From RS College Muzaffarpur </li>
+                            <li><span>2023</span><br>BCA From RDS Collage Muzaffarpur</li>
+                            <li><span>2024 - Pursuing</span><br>MCA From SRM Institute of Science and Technology
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May-2024</span><br>Internship From OCTANET, Domain - Web Development</li>
+                            <li><span>July-2024</span><br>Internship From CodeSoft, Domain - Web Development</li>
+                            <li><span>September-2024</span><br>Internship From Bhart Intern, Domain - Java</li>
+                         
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------services------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in creating tailored websites that meet the unique needs of your business. Whether it's a sleek corporate site, an engaging e-commerce platform, or a personal blog, I build responsive, SEO-friendly websites that ensure a seamless user experience across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>I offer a holistic approach to UI/UX design, creating digital products that are not only visually appealing but also provide a seamless and engaging user experience. My design process is centered around understanding your users' needs and aligning them with your business goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>I create high-performance, feature-rich mobile applications tailored to your business needs. Whether it's an iOS, Android, or cross-platform app, I design and develop user-friendly apps that provide a seamless experience across devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/clock.png" alt="">
+                    <div class="layer">
+                        <h3>TECH_TS Landing Page Project</h3>
+                        <p>The TECH_TS landing page is a sleek, modern interface designed to showcase the company’s innovative solutions in the tech industry.
+                        </p>
+<br>
+                        <h4>What I Did: </h4>
+                        <br>
+                        <p>Designed a clean, modern, and user-friendly interface.
+                        </p>
+                        <p>Integrated custom CSS animations.
+                        </p>
+                        <p>Focused on optimizing performance.</p>
+                        <div> <a href="https://github.com/Abhi0036/Landing_page"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://gauravshrivastava43.github.io/Calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/todolist.jpg" alt="">
+                    <div class="layer">
+                        <h3>To-Do List Project</h3>
+                        <p>The TO-DO list project is a streamlined, efficient task management tool built entirely with HTML and CSS. This project showcases my ability to create practical, user-friendly web applications with a focus on clean design and functionality.</p>
+
+                        <br>
+                        <h4>What I Did: </h4>
+                        <br>
+                        <p>Interface is clean and straightforward</p>
+                        <p>Responsive Layout</p>
+                        <p>Custom CSS features like hover effects and transitions</p>
+
+                        <div> <a href="https://github.com/Abhi0036/To_Do-List"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://gauravshrivastava43.github.io/Calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                       
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/glasscal.jpg" alt="">
+                    <div class="layer">
+                        <h3>Glassmorph Calculator Project</h3>
+                        <p>The Glassmorphism Calculator project is a visually stunning and fully functional calculator application built using HTML and CSS. This project showcases my ability to blend cutting-edge design trends with core front-end development skills to create an engaging user experience</p>
+                        <br>
+                        <h4>What I Did: </h4>
+                        <br>
+                        <p>Glassmorphism Design:</p>
+                        <p>Functional and Efficient:</p>
+                        <p>Responsive and Accessible:</p>
+                        <div> <a href="https://github.com/Gauravshrivastava43/Calculator"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://abhi0036.github.io/glassmorph-calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!-- -----------contact----------- -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <spam>Me</spam></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>  codewithgaurav.s123@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>  +91 8709173582</p>
+                    <div class="social-icons">
+                        <a href="https://https://www.facebook.com/rahuldon.don.37?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/gaurav_shrivastav.4_3?igsh=MXAzMXBtbXNxam80Mw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kumar-gaurav-0a8474250/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/My CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="contact" netlify>
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <!-- <p>@Copyright ©2024 created by Gaurav | all rights reserved </p> -->
+            <p>copyright &#169; www.gauravportfoli.com || All right reserved |<span class="purple">Kumar Gaurav</span></p>
+        </div>
+     </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+      var typed = new Typed('#element1', {
+          strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'UI/UX Designer'],
+          typeSpeed: 200,
+      });
+  </script>
+
+</body>
+
+</html>
